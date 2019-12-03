@@ -1,0 +1,1 @@
+I am going to create SpotFi. Which is a derivative of spotify. It is useful because it will allow me to gain experience with a music api. SpotFi will also provide the backbone to create my next intensive project which is using MusicKit. The idea of which is to create an Apple Music Django PWA application that attempts to improve on some of the shortcomings of the android app.
