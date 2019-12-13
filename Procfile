@@ -1,1 +1,1 @@
-web: gunicorn spotfi.wsgi --log-file -
+web: gunicorn SpotFi.wsgi --log-file -
