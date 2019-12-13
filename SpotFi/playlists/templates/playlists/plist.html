@@ -10,11 +10,21 @@
 </h3>
 <hr>
 {% if playlists %}
-  <div class="card-columns">
-    {% for playlist in playlists %}
-        {% include "partials/card.html" %}
-    {% endfor %}
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      {% for playlist in playlists %} 
+
+      {% include "partials/card.html" %}
+
+          {% if forloop.counter|divisibleby:"3" %}
+            <div class="w-100"></div>
+          {% endif %}
+
+      {% endfor %}
+    </div>
   </div>
+
 {% else %}
   <div class="alert alert-primary" role="alert">No pages to display.</div>
 
