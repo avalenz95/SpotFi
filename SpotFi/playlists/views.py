@@ -44,9 +44,10 @@ class IndexView(ListView):
 
 
 class PlaylistListView(ListView):
-
+    model = Playlist
     def get(self, request):
-        return render(request, 'playlists/plist.html')
+        playlists = Playlist.objects.all()
+        return render(request, 'playlists/plist.html', {'playlists': playlists})
         
 class PlaylistCreateView(CreateView):
 

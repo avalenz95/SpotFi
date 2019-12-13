@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="alert alert-primary" role="alert">PLAYLIST VIEW</div>
+
+<h3>
+    Playlists 
+    {% if playlists %}
+    <small class="text-muted">({{ playlists|length }})</small>
+    {% endif %}
+</h3>
+<hr>
+{% if playlists %}
+  <div class="card-columns">
+    {% for playlist in playlists %}
+        {% include "partials/card.html" %}
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="alert alert-primary" role="alert">No pages to display.</div>
+
+{% endif %}
 {% endblock %}
