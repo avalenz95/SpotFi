@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container-fluid">
+    <div class="row-fluid">
+    <h1>Create a Playlist</h1>
+    </div>
+    <div class="row-fluid">
+    <form method="POST">
+        {% csrf_token %}
+        <!--Renders form as paragraph-->
+        <table class="table">
+        {{ form.as_table }}
+        </table>
+        <input class="btn btn-primary rounded-pill" type="submit" value="Create">
+    </form>
+</div>
+</div>
+
+{% endblock %}

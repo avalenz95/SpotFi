@@ -4,7 +4,8 @@ from django.db import models
 
 class Playlist(models.Model):
     title = models.CharField(max_length=30)
-    number_of_songs = models.PositiveIntegerField()
+    author = models.CharField(max_length=30)
+    description = models.TextField()
 
     def __str__(self):
         return self.title
