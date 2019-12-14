@@ -10,7 +10,10 @@ SpotFi is a psudeo spotify cloned. Turned into a playlist skeleton for my upcomi
 
 
 ## Viewing the project
-Luckily this project is really easy to view. Just open up a web browser and go to [INSERT LINK TO HEROKU](https://palletsprojects.com/p/flask/). It may take a minute to start the server before the content appears.
+Luckily this project is really easy to view. Just open up a web browser and go [here](https://ab-spotfi.herokuapp.com/). It may take a minute to start the server before the content appears.
+
+## API Endpoint
+To check out the API Endpoint go [here](ab-spotfi.herokuapp.com/api/playlists/)
 
 
 ## Built With
